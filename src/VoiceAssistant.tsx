@@ -225,8 +225,8 @@ export default function VoiceAssistant({ userEmail }: { userEmail?: string | nul
   return (
     <div className="w-full h-full max-h-full lg:max-h-[85vh] grid grid-cols-1 lg:grid-cols-3 gap-6 p-2 sm:p-4 rounded-2xl border border-white/10 bg-black/20 backdrop-blur-xl shadow-2xl shadow-brand-blue/10">
       {/* Main Conversation Panel */}
-      <div className="lg:col-span-2 flex flex-col h-full min-h-[300px] lg:min-h-0 overflow-hidden rounded-lg border border-white/10 bg-black/20 p-4">
-        <div className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-6">
+  <div className="lg:col-span-2 flex flex-col h-full min-h-0 overflow-hidden rounded-lg border border-white/10 bg-black/20 p-4">
+  <div className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-6 max-h-[60vh] lg:max-h-[65vh]">
           <AnimatePresence>
             {conversation && conversation.messages.length > 0 ? (
               conversation.messages.map((message: Message) => (

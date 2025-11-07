@@ -11,6 +11,7 @@
     "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false && convex dev --once && vite build"
   },
   "dependencies": {
+    "@auth/core": "^0.34.3",
     "@convex-dev/auth": "^0.0.80",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-separator": "^1.0.3",
